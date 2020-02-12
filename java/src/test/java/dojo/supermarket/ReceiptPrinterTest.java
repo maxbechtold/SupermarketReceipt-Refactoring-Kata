@@ -52,7 +52,7 @@ public class ReceiptPrinterTest {
 
     @GoldenMasterRun(repetitions = 1)
     public void total() {
-        receipt.addProduct(toothbrush, 1, 0.99, 2 * 0.99);
+        receipt.addProduct(toothbrush, 2, 0.99, 2 * 0.99);
         receipt.addProduct(apples, 0.75, 1.99, 1.99 * 0.75);
 
         writeOut(receiptPrinter.printReceipt(receipt));
